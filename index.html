@@ -42,6 +42,18 @@
       max-width: 40vw;
     }
 
+    @media (max-width: 600px) {
+      .schedule {
+        max-width: 60vw;
+        flex: 1 0 60vw;
+      }
+
+      .sch-left {
+        max-width: 30vw;
+        flex: 1 0 30vw;
+      }
+    }
+
     .sch-done {
       opacity: 0.7;
     }
@@ -80,6 +92,7 @@
       align-items: center;
       text-align: center;
       overflow-y: scroll;
+      will-change: transform;
       padding-bottom: 60px;
     }
 
@@ -99,14 +112,13 @@
 
     .highlight {
       font-weight: 700;
-      text-decoration: underline;
     }
   </style>
 </head>
 
 <body style="margin: 0">
   <div class="img-container">
-    <div class="background-img"/>
+    <div class="background-img"></div>
   </div>
   <div class="text-container">
     <h1>
@@ -119,7 +131,7 @@
       <span class="emoji">📷</span><a href="http://www.instagram.com/kim617">Stay</a> <a href="http://www.instagram.com/connor.mcewen">Tuned</a>
     </p>
     <p class="reg-text reg-smaller">
-      We love and welcome travel buddies, so check out our <span class="highlight">tentative</span> itinerary below! We can be flexible on dates, just let us know ASAP if you can join us for any leg of our trip!
+      We love and welcome travel buddies, so check out our <span class="highlight">tentative</span> itinerary below. We can be flexible on dates, just let us know ASAP if you can join us for any leg of our trip!
     </p>
     <div class="text-box">
       <span class="schedule sch-left">
@@ -148,7 +160,7 @@
       </span>
       <span class="schedule sch-left"></span>
       <span class="schedule">
-        <span class="emoji">🇺🇸</span>Pembroke/Sylvania
+        <span class="emoji">🇺🇸</span>Home
       </span>
       <span class="schedule sch-left"></span>
       <span class="schedule">
@@ -234,7 +246,7 @@
       </span>
       <span class="schedule sch-left"></span>
       <span class="schedule">
-        <span class="emoji">🇨🇷</span>Parque Nacional Manuel Antonio
+        <span class="emoji">🇨🇷</span>PN Manuel Antonio
       </span>
       <span class="schedule sch-left"></span>
       <span class="schedule">
